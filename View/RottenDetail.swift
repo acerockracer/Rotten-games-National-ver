@@ -96,6 +96,7 @@ struct RottenDetails: View {
                                         } label: {
                                             Image(systemName: rottenTools.updateGamespot ? "\(update)" : "\(update).fill")
                                         }
+                                        Link("GameSpot Review", destination: URL(string: ReviewData.GameSpotLink)!)
                                     } else {
                                         ReviewList(statusName: "IGN", value: ReviewData.IGN/10, color: backgroundColor)
                                         Button {
@@ -109,6 +110,7 @@ struct RottenDetails: View {
                                         } label: {
                                             Image(systemName: rottenTools.updateIGN ? "\(update)" : "\(update).fill")
                                         }
+                                        Link("IGN Review", destination: URL(string: ReviewData.IGNLink)!)
                                     }
                                 }
                                 ForEach(0..<2) { i in
@@ -125,6 +127,7 @@ struct RottenDetails: View {
                                         } label: {
                                             Image(systemName: rottenTools.updateMetacritic ? "\(update)" : "\(update).fill")
                                         }
+                                        Link("Metacritic Review", destination: URL(string: ReviewData.MetacriticLink)!)
                                     } else {
                                         ReviewList(statusName: "PCGamer", value: ReviewData.PCGamer/10, color: backgroundColor)
                                         Button {
@@ -138,6 +141,7 @@ struct RottenDetails: View {
                                         } label: {
                                             Image(systemName: rottenTools.updatePCGamer ? "\(update)" : "\(update).fill")
                                         }
+                                        Link("PCGamer Review", destination: URL(string: ReviewData.PCGamerLink)!)
                                     }
                                 }
                                 Slider(value: $rottenTools.microReview, in: 1...10, step: 1)
