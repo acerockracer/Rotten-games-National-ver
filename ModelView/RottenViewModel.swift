@@ -15,7 +15,7 @@ class RottenViewModel: ObservableObject {
     
 @Published var review = [ReviewData]()
 
-let apiURL = "https://firebasestorage.googleapis.com/v0/b/rotten-games.appspot.com/o/rotten-games-default-rtdb-export%20(1).json?alt=media&token=87814800-65ff-4472-9948-5087345bdf62"
+let apiURL = "https://firebasestorage.googleapis.com/v0/b/rotten-games.appspot.com/o/rotten-games-default-rtdb-export%20(2).json?alt=media&token=e11d2af0-1576-412e-9513-e11ce8bd3954"
 
 init() {
     fetchReviewData()

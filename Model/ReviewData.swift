@@ -20,6 +20,7 @@ struct ReviewData: Decodable, Identifiable {
     let Metacritic: Float
     let MetacriticLink: String
     let PCGamer: Float
+    let PCGamerLink: String
     let devImageURL: String
     let gameImageURL: String
 }
