@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 // sorts the data
 
 struct ReviewData: Decodable, Identifiable {
@@ -24,3 +25,4 @@ struct ReviewData: Decodable, Identifiable {
     let devImageURL: String
     let gameImageURL: String
 }
+

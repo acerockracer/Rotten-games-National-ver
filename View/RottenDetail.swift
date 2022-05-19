@@ -8,6 +8,7 @@
 import SwiftUI
 import Kingfisher
 
+
 struct RottenDetails: View {
     
 // gives details and reviews

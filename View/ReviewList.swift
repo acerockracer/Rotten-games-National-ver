@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ReviewListView: View {
     
 // Provides main view and navigation to game review
